@@ -1,0 +1,89 @@
+---
+layout: index-layout
+subject: My Email Templates
+---
+
+<container>
+  <row>
+    <columns>
+      <img src="https://imgur.com/6lyKfLI.jpeg" class="header">
+    </columns>
+  </row>
+  <row>
+    <columns small="12" large="12">
+      <h2 class="text-center">
+        {{ReceiptEmail.Content.Header}}
+      </h2>
+      <span class="text-center">
+        {{ReceiptEmail.Content.invoice}} 
+      </span>
+      <spacer></spacer>
+      <center>
+      <a href="#">{{ReceiptEmail.Content.PdfLink}}</a>
+    </center>
+    </columns>
+  </row>
+  <row>
+    <columns small="6" large="12">
+      <h3 class="info-title">{{ReceiptEmail.Content.Amountpaid}}</h3>
+      <span class="span-info">$19.00</span>
+    </columns>
+    <columns small="6" large="12">
+      <h3 class="info-title">{{ReceiptEmail.Content.Amount}}</h3>
+      <span class="span-info">{{ReceiptEmail.Content.Datepaid}}</span>
+    </columns>
+    <columns small="6" large="12">
+      <h3 class="info-title">{{ReceiptEmail.Content.method}}</h3>
+      <span class="span-info">{{ReceiptEmail.Content.Visa}}</span>
+    </columns>
+  </row>
+  <spacer size="5px"></spacer>
+  <row>
+    <columns small="6" large="6">
+      <span class="summary">{{ReceiptEmail.Content.Summary}}</span>
+      <h4 class="date-content">{{ReceiptEmail.Content.DateContent}}</h4>
+    </columns>
+  </row>
+  <row>
+    <columns small="6" large="6" >
+      <h3 class="content">{{ReceiptEmail.Content.Plan}}</h3>
+    </columns>
+    <columns small="6" large="6" class="money">
+      {{ReceiptEmail.Content.Amount}}
+    </columns>
+  </row>
+  <hr style="width: 90%;">
+  <row>
+    <columns small="6" large="6">
+      <h3 class="content">{{ReceiptEmail.Content.Subtotal}}</h3>
+    </columns>
+    <columns small="6" large="6" class="money">
+      {{ReceiptEmail.Content.Amount}}
+    </columns>
+  </row>
+  <row>
+    <columns>
+      <h3 class="content">{{ReceiptEmail.Content.Amountpaid}}</h3>
+    </columns>
+    <columns small="6" large="6" class="money">
+      {{ReceiptEmail.Content.Amount}}
+    </columns>
+  </row>
+  <hr style="width: 90%;">
+  <row>
+    <columns small="12" large="6">
+    <p>
+      {{ReceiptEmail.Content.info}} <a href="#">{{ReceiptEmail.Content.TopFirstLink}}</a>,{{ReceiptEmail.Content.TopContent}}  <a href="#">{{ReceiptEmail.Content.TopThirdLink}}</a>{{ReceiptEmail.Content.TopSecondLink}}<a href="#">{{ReceiptEmail.Content.TopFourthLink}}</a>.</p>
+    </columns>
+  </row>
+  <spacer size="5px" class="background-spacer" ></spacer>
+  <row>
+    <columns small="12" large="12">
+      <p class="footer">
+        You're receiving this email because you made a purchase at <a href="#"> K Health Affiliated Medical Group</a>, which partners with <a href="">Stripe</a> to provide <a href="#">invoicing</a> and payment processing
+      </p>
+    </columns>
+  </row>
+  <spacer size="5px" class="background-spacer" ></spacer>
+</container>
+
